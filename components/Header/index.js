@@ -25,10 +25,13 @@ function Header(spanContent, title, temp) {
     const spanTwo = document.createElement('span');
     spanTwo.classList.add('temp');
     spanTwo.textContent = temp;
+    main.appendChild(spanTwo);
 
+
+    console.log(main)
     return main;
 }
 
-const container = document.createElement('.header-container');
+const container = document.querySelector('.header-container');
 
 container.appendChild(Header('MARCH 28, 2019', 'Lambda Times', "98"));
