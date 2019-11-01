@@ -19,7 +19,7 @@ function Header(spanContent, title, temp) {
 
     const span = document.createElement('span');
     span.classList.add('date');
-    span.text = spanContent;
+    span.textContent = spanContent;
     main.appendChild(span);
 
     const spanTwo = document.createElement('span');
@@ -27,8 +27,6 @@ function Header(spanContent, title, temp) {
     spanTwo.textContent = temp;
     main.appendChild(spanTwo);
 
-
-    console.log(main)
     return main;
 }
 
